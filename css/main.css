@@ -1,0 +1,114 @@
+.carro * {
+    position: relative;
+}
+
+.titulo-carro {
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+    .titulo-carro {
+        display: block;
+    }
+    .carro {
+        display: block;
+        width: 260px !important;
+        height: auto;
+    }
+    .carro thead {
+        display: none;
+    }
+    .carro tbody tr td {
+        padding-left: 35% !important;
+        margin-bottom: -15px;
+    }
+    .carro tbody tr td:last-child {
+        margin-bottom: 0;
+    }
+    .carro tbody tr td:before {
+        color: cornflowerblue;
+        font-weight: unset;
+        position: absolute;
+        left: 10px;
+        top: 10px;
+    }
+    .carro>*,
+    .carro tr,
+    .carro td {
+        display: block;
+    }
+    .carro tbody tr {
+        font-size: 14px;
+    }
+    .carro tbody tr td:nth-child(1):before {
+        content: "SKU#";
+        font-weight: bold;
+        color: white;
+    }
+    .carro tbody tr td:nth-child(2):before {
+        content: "Modelo";
+        font-weight: bold;
+        color: white;
+    }
+    .carro tbody tr td:nth-child(3):before {
+        content: "Categoria";
+        font-weight: bold;
+        color: white;
+    }
+    .carro tbody tr td:nth-child(4):before {
+        content: "Cantidad";
+        font-weight: bold;
+        color: white;
+    }
+    .carro tbody tr td:nth-child(5):before {
+        content: "Precio";
+        font-weight: bold;
+        color: white;
+    }
+    .carro tbody tr td:nth-child(6):before {
+        content: "Eliminar";
+        font-weight: bold;
+        color: white;
+    }
+}
+
+.icono-carrito-mp {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.icono-carrito {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.contador {
+    position: absolute;
+    bottom: 8px;
+    left: 12px;
+}
+
+.contadormp {
+    position: absolute;
+    bottom: 8px;
+    left: 12px;
+}
+
+@media screen and (max-width: 500px) {
+    .dataTables_filter {
+        margin: 0;
+        font-family: "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 1.5;
+        color: #ffffff;
+        text-align: left;
+        background-color: #454d55;
+    }
+    .emailocultar {
+        text-align: center;
+        display: none;
+    }
+}

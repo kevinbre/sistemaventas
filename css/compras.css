@@ -1,0 +1,267 @@
+.titulo_cp {
+    color: #ffffff;
+    font-size: 2em;
+    line-height: 1.4em;
+    font-weight: normal;
+    text-align: center;
+    margin: 0 0 20px 0;
+    background: url(../img/dimension.png);
+    font-family: 'Poppins', sans-serif;
+}
+
+.transparencia modal {
+    opacity: .8;
+}
+
+.logo_cp {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.arreglado {
+    width: 30%;
+    margin-left: 36%;
+    height: 50px;
+}
+
+.logo_cp img {
+    width: 100px;
+    height: 100px;
+}
+
+.nombre_farmacia {
+    font-size: 18px;
+    color: #e6e6e6;
+}
+
+.datos_cp {
+    color: #e6e6e6;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding-left: 0px;
+}
+
+.datos_cp span {
+    color: #e6e6e6;
+    font-size: 25px;
+}
+
+.correo {
+    color: rgb(58, 77, 138);
+    text-decoration: underline;
+}
+
+
+/*TABLA DE compra*/
+
+.compra * {
+    position: relative;
+}
+
+
+/*encabezado morado*/
+
+.compra thead tr {
+    background: #3f6791;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+/*encabezado producto blancas*/
+
+.compra th {
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.2;
+    font-weight: unset;
+}
+
+
+/*resalto de cada fila*/
+
+.compra tbody tr:nth-child(even) {
+    background-color: #2e2e2e;
+}
+
+
+/*SELECT2*/
+
+.select2-container--default .select2-results__option--highlighted[aria-selected],
+.select2-container--default .select2-results__option--highlighted[aria-selected]:hover {
+    background-color: #ffffff;
+    color: #fff;
+}
+
+.select2-container--default .select2-results__option[aria-selected=true],
+.select2-container--default .select2-results__option[aria-selected=true]:hover {
+    color: #0f171f;
+}
+
+.dark-mode .select2-results__option[aria-selected=true] {
+    background-color: #3f474e!important;
+    color: #dee2e6;
+}
+
+.select2-container--default .select2-results__option[aria-selected=true] {
+    background-color: #dee2e6;
+}
+
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+    background-color: #7087ab;
+    color: white;
+}
+
+.select2-container--default .select2-results__option--highlighted {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.select2-container--default .select2-results__option {
+    padding: 6px 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.select2-container--default .select2-results__option--selected {
+    background-color: #3f6791;
+}
+
+.select2-results__option--selectable {
+    cursor: pointer;
+}
+
+.select2-results__option {
+    padding: 6px;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+@media screen and (max-width: 900px) {
+    .datos_cp input {
+        margin-left: 10px;
+    }
+    .arreglado {
+        width: 75%;
+        margin-left: 15%;
+    }
+    .datos_cp span {
+        text-align: center;
+    }
+    .compra {
+        display: block;
+    }
+    .compra>*,
+    .compra tr,
+    .compra td,
+    .compra th {
+        display: block;
+        text-align: center;
+    }
+    .compra thead {
+        width: 100%;
+        height: 200px;
+        vertical-align: middle;
+        display: none;
+        color: #325684;
+    }
+    .compra tbody tr {
+        height: auto;
+        padding: 37px 0;
+    }
+    .compra tbody tr td {
+        padding-left: 50% !important;
+        margin-bottom: -10px;
+    }
+    .compra tbody tr td:last-child {
+        margin-bottom: 0;
+    }
+    .compra tbody tr td:before {
+        font-size: 14px;
+        color: #343a40;
+        line-height: 1.2;
+        font-weight: unset;
+        position: absolute;
+        width: 10px;
+        left: 10px;
+        vertical-align: middle!important;
+    }
+    .compra tbody tr td:nth-child(1):before {
+        content: "SKU#";
+        font-size: 15px;
+        font-weight: bold;
+        color: white;
+        vertical-align: middle!important;
+    }
+    .compra tbody tr td:nth-child(2):before {
+        content: "Modelo";
+        font-weight: bold;
+        font-size: 15px;
+        color: white;
+        vertical-align: middle!important;
+    }
+    .compra tbody tr td:nth-child(3):before {
+        content: "Categoria";
+        font-weight: bold;
+        font-size: 15px;
+        color: white;
+        vertical-align: middle!important;
+    }
+    .compra tbody tr td:nth-child(4):before {
+        content: "Stock";
+        font-weight: bold;
+        font-size: 15px;
+        color: white;
+        vertical-align: middle!important;
+    }
+    .compra tbody tr td:nth-child(5):before {
+        content: "Precio U.";
+        font-weight: bold;
+        font-size: 15px;
+        color: white;
+        vertical-align: middle!important;
+    }
+    .compra tbody tr td:nth-child(6):before {
+        content: "Cantidad";
+        font-weight: bold;
+        font-size: 15px;
+        color: white;
+        vertical-align: middle!important;
+    }
+    .compra tbody tr td:nth-child(7):before {
+        content: "Sub-Total";
+        font-weight: bold;
+        font-size: 15px;
+        color: white;
+        vertical-align: middle!important;
+    }
+    .compra tbody tr td:nth-child(8):before {
+        content: "Eliminar";
+        font-weight: bold;
+        font-size: 15px;
+        color: white;
+        vertical-align: middle!important;
+    }
+    .compra tbody tr {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .table-activ3 {
+        background-color: #343a40;
+        vertical-align: middle!important
+    }
+    .compra {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .arreglotabla {
+        width: 200px;
+        font-size: 14px;
+    }
+}
